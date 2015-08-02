@@ -1,0 +1,25 @@
+<section class="" id="dates-list">
+  <h1 id="upcoming" class="date-heading">Upcoming Concerts</h1>
+  <hr class="projectsHr">
+  <ul class="events">
+    <li>
+      {{ range where .Data.Pages.ByDate "Section" "date" }}
+        {{ if ge .Date.Unix .Now.Unix }}
+          <div class="post">
+            <p class="calendar"> {{ .Date.Format "2" }} <em>{{ .Date.Format "Jan 15:04"}}</em></p>
+            <h3 class="date-description"> {{ .Description }} </h3>
+            <div>
+              <div class="expander">
+                <a href="javascript:void(0)" id="" class="expander-trigger expander-hidden js-expander-trigger">Details</a>
+                <div id="js-expander-content" class="expander-content">
+                  <p> {{ .Content }} </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        {{ end }}
+      {{ end }}
+    </li>
+  </ul>
+  <script src="js/expander.js"></script>
+</section>
