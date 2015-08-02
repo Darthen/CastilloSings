@@ -1,0 +1,39 @@
+{{ "<!-- Portfolio Modals -->" | safeHTML }}
+{{ range .Site.Data.projects }}
+<div class="portfolio-modal modal fade" id="portfolioModal{{ .modalID }}" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-content">
+        <div class="close-modal" data-dismiss="modal">
+            <div class="lr">
+                <div class="rl">
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2">
+                    <div class="modal-body">
+                        <h2>{{ .title }}</h2>
+                        <hr class="star-primary">
+                        <img src="img/portfolio/{{ .img }}" class="img-responsive img-centered" alt="">
+                        <p>{{ .description | markdownify }}</p>
+                        <strong><a href="{{ .clientLink }}">{{ .client }}</a></strong>
+                        <div class="video">
+                          <div class="video-wrapper">
+                            <iframe frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/{{ .soundcloudID }}&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true" allowfullscreen>
+                            </iframe>
+                          </div>
+                        </div>
+                        <ul class="list-inline item-details">
+                            <li>
+                                
+                            </li>
+                        </ul>
+                      
+                        <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> {{ with $.Site.Params.portfolio.modal.buttonText }}{{.}}{{ end }}</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{{ end }}
