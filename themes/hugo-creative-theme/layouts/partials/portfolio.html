@@ -1,7 +1,7 @@
 <section class="" id="portfolio">
    <h1 id="projects-title">Main Projects</h1>
    <hr class="projectsHr">
-   <h4 id="click-to-see">- click to see more information -</h4>
+   
     <div class="container-fluid">
         <div class="row no-gutter">
             {{ range .Site.Data.projects }}
@@ -16,6 +16,7 @@
                             <div class="project-name">
                                 {{ .title }}
                             </div>
+                            <h5 class="project-name">click to see more</h5>
                         </div>
                     </div>
                 </a>
