@@ -74,7 +74,7 @@ theme = "hugo-creative-theme"
         [[params.services.list]]
             icon = "fa-heart"
             title = "You love music."
-            description = "As a time goes by one might lose sight of what we really love. Find your way back!"
+            description = "As a time goes by one might lose sight of what one really loves. Find your way back!"
 
 
     # Portfolio modals
