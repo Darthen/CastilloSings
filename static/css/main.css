@@ -11,6 +11,9 @@ html {
 .events {
   padding-left: 0; }
 
+#click-to-see {
+  text-align: center; }
+
 #dates-list {
   padding-top: 150px; }
 
