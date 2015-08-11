@@ -6,4 +6,4 @@ title = "CastilloPlekhovNakaiTrio_15 05 15"
 
 +++
 
-This is the first  concert of my latest project: the Castillo/Plekhov/Nakai Trio. I am thrilled to perform at the very cosy bar **Not Only Jazz**! Join us and listen to this new combo!
+This is the first  concert of my latest project: the Castillo/Plekhov/Nakai Trio. I am thrilled to perform at the very cosy bar **Not Only Jazz**! Join us and listen to this new combo! (Boxhagenerstr. 111)
