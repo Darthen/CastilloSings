@@ -22,6 +22,10 @@ body, #projects-title {
   
 }
 
+#click {
+  text-align: center;
+  color: #464646; }
+
 .projectsHr {
   padding-bottom: 20px;
 }
